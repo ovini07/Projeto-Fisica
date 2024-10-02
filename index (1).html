@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Estufa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#grafico">Gráfico</a></li>
+                <li><a href="#gases">Gases do Efeito Estufa</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <h1>Efeito Estufa</h1>
+        <p>O efeito estufa é um fenômeno natural que ocorre na atmosfera terrestre, essencial para a manutenção da
+            temperatura da Terra e, consequentemente, para a sobrevivência dos seres vivos. Ele acontece quando a
+            radiação solar atinge a superfície da Terra, onde parte dessa energia é absorvida e convertida em calor.
+            Esse calor, por sua vez, é irradiado de volta para a atmosfera na forma de radiação infravermelha.</p>
+    </section>
+
+    <section id="grafico">
+        <h2>Gráfico de Temperatura em Função do Tempo</h2>
+        <figure id="grafico-container"></figure>
+    <br />
+    <p>
+        Acompanhe abaixo a obtenção em tempo real dos dados do experimento do efeito
+        estufa.<br />
+        Após a finalização da coleta de dados, copie a tabela com os dados e cole em
+        uma planilha eletrônica para fazer a análise dos dados.
+    </p>
+
+    <div id="t1" class="div-lado dig-g" class="container"></div>
+
+    <div class="div-lado div-t">
+        <table>
+            <tr>
+                <td><b>&nbsp; Tempo (s) &nbsp;</b></td>
+                <td><b>&nbsp; Temperatura Ambiente (ºC) &nbsp;</b></td>
+                <td><b>&nbsp; Temperatura Estufa (ºC) &nbsp;</b></td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="tdata"></span>
+                </td>
+                <td>
+                    <span id="Tmp1"></span>
+                </td>
+                <td>
+                    <span id="Tmp2"></span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <section class="bottom">
+        <button class="btn-refresh" id="refresh">Limpar</button>
+        <button class="btn-refresh" id="download">Baixar CSV</button>
+    </section>
+    </section>
+
+    <section id="gases">
+        <h2>Principais Gases do Efeito Estufa</h2>
+        <table id="tabela-gases">
+            <thead>
+                <tr>
+                    <th>Gás</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dióxido de Carbono (CO₂)</td>
+                    <td>O gás mais abundante emitido por atividades humanas, principalmente pela queima de combustíveis
+                        fósseis.</td>
+                </tr>
+                <tr>
+                    <td>Metano (CH₄)</td>
+                    <td>Possui um efeito de aquecimento muito maior que o CO₂ e é emitido por atividades agrícolas e
+                        pecuária.</td>
+                </tr>
+                <tr>
+                    <td>Óxido Nitroso (N₂O)</td>
+                    <td>Emitido por práticas agrícolas, como o uso de fertilizantes.</td>
+                </tr>
+                <tr>
+                    <td>Gases Fluoretados</td>
+                    <td>Produzidos por atividades industriais e possuem um alto potencial de aquecimento.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="conclusao">
+        <h2>Conclusão</h2>
+        <p>O efeito estufa é um fenômeno vital para a vida na Terra, permitindo que nosso planeta mantenha uma
+            temperatura adequada para o desenvolvimento da flora e fauna. Contudo, o aumento das emissões de gases de
+            efeito estufa, resultante das atividades humanas, tem gerado preocupações significativas em relação ao
+            aquecimento global e suas consequências.
+            À medida que a temperatura da Terra continua a subir, enfrentamos desafios ambientais críticos, incluindo
+            mudanças climáticas, eventos climáticos extremos e impactos na biodiversidade. Portanto, é imprescindível
+            que tomemos medidas para reduzir nossas emissões de gases poluentes e promover práticas sustentáveis. A
+            conscientização sobre o efeito estufa e suas implicações é fundamental para que possamos proteger nosso
+            planeta para as gerações futuras. O entendimento do fenômeno e suas causas nos capacita a agir e buscar
+            soluções para mitigar seus efeitos adversos, garantindo um futuro mais sustentável para todos.</p>
+    </section>
+
+    <script src="java/back_end.js"></script>
+</body>
+
+</html>

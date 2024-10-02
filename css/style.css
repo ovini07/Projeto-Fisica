@@ -1,0 +1,120 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-image: url("../img/ee.jpg");
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f3f6f5;
+    font-size: 15px;
+}
+
+.div-lado {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 25px;
+}
+
+.div-g {
+    width: 10%;
+}
+
+.div-t {
+    width: 25%;
+}
+
+.btn-refresh {
+    background: #4CAF50;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(16, 1, 1);
+    border: none;
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(116, 233, 151, 0.87);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.conclusao {
+    background-color: #6add7de0; /* Mesma cor do nav */
+    color: #FFFFFF; /* Cor do texto branco */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#grafico-container {
+    width: 100%;
+    height: 10px;
+    margin: 0 auto;
+}
+
+#tabela-gases {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+#tabela-gases th, #tabela-gases td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#tabela-gases th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#tabela-gases tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
